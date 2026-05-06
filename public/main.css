@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    font-size: 12px;
+    line-height: 8px;
+    text-align: justify;
+    background-image: url(image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(225, 225, 255, 0.3);
+    padding: 1rem;
+    word-break: break-all;
+    margin: 0;
+    box-sizing: border-box;
+}
