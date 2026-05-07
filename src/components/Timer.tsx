@@ -37,7 +37,7 @@ export default function Timer() {
       transition={{ duration: 0.7, type: 'spring' }}
       className="relative max-w-2xl mx-auto"
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-600/30 via-pink-500/20 to-red-600/30 rounded-2xl blur-xl -z-10" />
+      <div className="absolute inset-0 bg-linear-to-r from-purple-600/30 via-pink-500/20 to-red-600/30 rounded-2xl blur-xl -z-10" />
 
       <div className="relative bg-white/10 backdrop-blur-xl rounded-2xl shadow-2xl p-8 sm:p-10 border border-white/20 text-center">
         <motion.h2

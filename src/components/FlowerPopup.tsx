@@ -186,12 +186,12 @@ export default function FlowerPopup({ onClick }: FlowerPopupProps) {
         animate={{ scale: 1 }}
         exit={{ scale: 0.8 }}
         transition={{ type: 'spring', stiffness: 25, duration: 2 }}
-        className="relative w-[500px] h-[600px]"
+        className="relative w-125 h-150"
       />
 
       {/* Glow behind bouquet */}
       <div className="absolute inset-0 -z-10 blur-3xl scale-150">
-        <div className="w-full h-full bg-gradient-to-r from-pink-500/60 via-red-500/60 to-purple-500/60 rounded-full" />
+        <div className="w-full h-full bg-linear-to-r from-pink-500/60 via-red-500/60 to-purple-500/60 rounded-full" />
       </div>
 
       {/* Click hint */}

@@ -9,7 +9,7 @@ export default function Letter() {
         className="relative max-w-2xl mx-auto overflow-hidden"
       >
       {/* Envelope flap effect */}
-      <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-24 h-6 bg-gradient-to-b from-amber-100 to-transparent rounded-t-full opacity-60 z-10" />
+      <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-24 h-5 bg-linear-to-b from-amber-100 to-transparent rounded-t-full opacity-60 z-10" />
 
       {/* Main paper */}
       <div
@@ -41,41 +41,43 @@ export default function Letter() {
 
         {/* Content */}
         <div className="relative z-10">
-          <div className="text-center mb-6">
+          <div className="text-center mb-3">
             <motion.div initial={{ scaleX:0 }} animate={{ scaleX:1 }} transition={{ duration:0.6, delay:0.3 }}
-              className="h-px w-16 bg-gradient-to-r from-transparent via-amber-800/40 to-transparent mx-auto mb-4" />
+              className="h-px w-16 bg-linear-to-r from-transparent via-amber-800/40 to-transparent mx-auto mb-4" />
             <motion.h1 initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ delay:0.4 }}
-              className="text-3xl sm:text-4xl font-heading text-amber-900/90 italic">
+              className="text-2xl sm:text-3xl font-heading text-amber-900/90 italic">
               To My Love
             </motion.h1>
             <motion.div initial={{ scaleX:0 }} animate={{ scaleX:1 }} transition={{ duration:0.6, delay:0.5 }}
-              className="h-px w-16 bg-gradient-to-r from-transparent via-amber-800/40 to-transparent mx-auto mt-4" />
+              className="h-px w-16 bg-linear-to-r from-transparent via-amber-800/40 to-transparent mx-auto mt-4" />
           </div>
 
           <div className="text-[#3E2723] leading-relaxed space-y-4 text-base sm:text-lg font-body">
             <motion.p initial={{ opacity:0, x:-20 }} animate={{ opacity:1, x:0 }} transition={{ delay:0.6 }}
               className="first-letter:text-4xl first-letter:font-heading first-letter:text-amber-800 first-letter:mr-2 first-letter:float-left">
-              My dearest, every moment with you feels like a beautiful dream I never want to wake up from.
+              Happy 18th Birthday and 11th monthsary! Thank you for being the light of my life and filling my days with joy and laughter.
             </motion.p>
             <motion.p initial={{ opacity:0, x:-20 }} animate={{ opacity:1, x:0 }} transition={{ delay:0.8 }}>
-              Thank you for being the light of my life and filling my days with joy and laughter.
+              From our first meeting to today, every day has been a gift. I will always cherish the memories we've made
+              throughout the days.
             </motion.p>
             <motion.p initial={{ opacity:0, x:-20 }} animate={{ opacity:1, x:0 }} transition={{ delay:1.0 }}>
-              From our first meeting to today, every day has been a gift. I cherish the way you smile,
-              the sound of your laughter, and the warmth of your hand in mine.
-            </motion.p>
-            <motion.p initial={{ opacity:0, x:-20 }} animate={{ opacity:1, x:0 }} transition={{ delay:1.2 }}>
               We've grown together, learned together, and built something beautiful. You are my best friend,
               my confidant, and my greatest love.
             </motion.p>
+            <motion.p initial={{ opacity:0, x:-20 }} animate={{ opacity:1, x:0 }} transition={{ delay:1.2 }}>
+              It's amazing na we started as classmates, naging friends, then naging lovers 'no? Sana in the future we can
+              achieve the dreams we talk about, I'm so grateful of all the memories we've shared together. Thank you mikay
+            </motion.p>
             <motion.p initial={{ opacity:0, x:-20 }} animate={{ opacity:1, x:0 }} transition={{ delay:1.4 }}>
               Here's to all our tomorrows, to the adventures that await us, and to a love that grows stronger
-              with each passing day. I love you more than words can express.
+              with each passing day. I love you more than words can express. Once again Happy 18th birthday love!
             </motion.p>
           </div>
 
           <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ delay:1.0 }} className="mt-6 text-right">
-            <p className="text-xl font-heading italic text-amber-900/80">With all my love</p>
+            <p className="text-xl font-heading italic text-amber-900/80">With all my love,</p>
+            <p className="text-xl font-heading italic text-amber-900/80">Ervane</p>
             <div className="mt-1 text-amber-800/40 text-xs">✦ ✦ ✦</div>
           </motion.div>
         </div>

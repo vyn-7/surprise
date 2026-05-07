@@ -42,7 +42,7 @@ export default function MusicPlayer() {
         transition={{ delay: 1, type: 'spring', stiffness: 200 }}
         className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center shadow-xl ${
           isPlaying
-            ? 'bg-gradient-to-r from-pink-500 to-red-500 shadow-pink-500/50'
+            ? 'bg-linear-to-r from-pink-500 to-red-500 shadow-pink-500/50'
             : 'bg-white/90 backdrop-blur-md hover:bg-white shadow-black/20'
         }`}
         title={isPlaying ? 'Pause Music' : 'Play Music'}

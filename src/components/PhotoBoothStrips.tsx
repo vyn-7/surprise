@@ -48,7 +48,7 @@ export default function PhotoBoothStrips() {
             <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-6 h-3 bg-yellow-200/70 rotate-[-15deg] rounded-sm z-20" />
 
             {/* Photo */}
-            <div className="aspect-[3/4] overflow-hidden bg-gradient-to-br from-pink-50 to-purple-50">
+            <div className="aspect-3/4 overflow-hidden bg-linear-to-br from-pink-50 to-purple-50">
               <img
                 src={photoSrc}
                 alt={`Memory ${index + 1}`}

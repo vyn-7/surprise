@@ -172,7 +172,7 @@ export default function Reasons() {
         </div>
         <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
           <motion.div
-            className="h-full bg-gradient-to-r from-pink-500 to-purple-500 rounded-full"
+            className="h-full bg-linear-to-r from-pink-500 to-purple-500 rounded-full"
             animate={{ width: `${(currentIndex / deck.length) * 100}%` }}
             transition={{ duration: 0.3 }}
           />
@@ -180,7 +180,7 @@ export default function Reasons() {
       </div>
 
       {/* Card Stack */}
-      <div className="relative h-[350px] w-[300px] mx-auto perspective-1000 mb-8">
+      <div className="relative h-87.5 w-75 mx-auto perspective-1000 mb-8">
         {visibleCards > 0 && [...Array(visibleCards)].map((_, i) => {
           const cardIndex = currentIndex + i
           const isTop = i === 0
@@ -262,7 +262,7 @@ export default function Reasons() {
           whileTap={{ scale: 0.95 }}
           onClick={handleDraw}
           disabled={cardsLeft <= 0}
-          className="px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 text-white font-heading disabled:opacity-50 disabled:cursor-not-allowed"
+          className="px-6 py-3 rounded-full bg-linear-to-r from-pink-500 to-purple-500 text-white font-heading disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {cardsLeft > 0 ? 'Draw Card 🎴' : 'All Drawn! 🎉'}
         </motion.button>

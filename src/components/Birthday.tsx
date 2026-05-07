@@ -52,7 +52,7 @@ export default function Birthday() {
         className="relative max-w-2xl mx-auto overflow-hidden"
       >
       {/* Glow effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/30 via-orange-500/20 to-pink-600/30 rounded-2xl blur-xl -z-10" />
+      <div className="absolute inset-0 bg-linear-to-r from-yellow-600/30 via-orange-500/20 to-pink-600/30 rounded-2xl blur-xl -z-10" />
 
       <div className="relative bg-white/10 backdrop-blur-xl rounded-2xl shadow-2xl p-6 sm:p-8 border border-white/20">
         <audio
@@ -68,7 +68,7 @@ export default function Birthday() {
             whileInView={{ scaleX: 1 }} 
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="h-1 w-16 bg-gradient-to-r from-transparent via-yellow-400/60 to-transparent mx-auto mb-4" 
+            className="h-1 w-16 bg-linear-to-r from-transparent via-yellow-400/60 to-transparent mx-auto mb-4" 
           />
           <motion.h1 
             initial={{ opacity: 0, scale: 0.5 }} 
@@ -84,7 +84,7 @@ export default function Birthday() {
             whileInView={{ scaleX: 1 }} 
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="h-1 w-16 bg-gradient-to-r from-transparent via-yellow-400/60 to-transparent mx-auto mt-4" 
+            className="h-1 w-16 bg-linear-to-r from-transparent via-yellow-400/60 to-transparent mx-auto mt-4" 
           />
         </div>
 
@@ -95,7 +95,7 @@ export default function Birthday() {
           whileInView={{ scale: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6, type: 'spring', stiffness: 100 }}
-          className="w-[300px] h-[300px] mx-auto mb-6"
+          className="w-75 h-75 mx-auto mb-6"
         />
 
         {/* Birthday Message */}
@@ -131,7 +131,7 @@ export default function Birthday() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             onClick={togglePlay}
-            className="w-14 h-14 rounded-full bg-gradient-to-r from-yellow-600 to-orange-600 flex items-center justify-center text-white shadow-lg shadow-yellow-500/50"
+            className="w-14 h-14 rounded-full bg-linear-to-r from-yellow-600 to-orange-600 flex items-center justify-center text-white shadow-lg shadow-yellow-500/50"
           >
             {isPlaying ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -139,7 +139,7 @@ export default function MainScreen() {
       {/* Animated gradient background */}
       <div className="fixed inset-0 -z-20">
         {/* Base gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-violet-900 via-fuchsia-800 to-rose-900" />
+        <div className="absolute inset-0 bg-linear-to-br from-violet-900 via-fuchsia-800 to-rose-900" />
 
         {/* Animated color overlay */}
         <motion.div
@@ -257,7 +257,7 @@ export default function MainScreen() {
       {orbs.map((o) => (
         <motion.div
           key={o.id}
-          className="fixed rounded-full bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-red-500/10 blur-xl -z-10 pointer-events-none"
+          className="fixed rounded-full bg-linear-to-r from-pink-500/10 via-purple-500/10 to-red-500/10 blur-xl -z-10 pointer-events-none"
           style={{
             left: o.left,
             top: o.top,

@@ -111,7 +111,7 @@ export default function EmotionalLetters() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             onClick={() => setSelectedLetter(index)}
-            className={`p-6 rounded-2xl bg-gradient-to-br ${letter.color} backdrop-blur-sm border ${letter.borderColor} cursor-pointer transition-all`}
+            className={`p-6 rounded-2xl bg-linear-to-br ${letter.color} backdrop-blur-sm border ${letter.borderColor} cursor-pointer transition-all`}
           >
             <h3 className="text-white text-xl font-heading mb-2">{letter.emotion}</h3>
             <p className="text-white/50 text-xs">{letter.verse}</p>
@@ -135,7 +135,7 @@ export default function EmotionalLetters() {
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ type: 'spring', stiffness: 300 }}
               onClick={(e) => e.stopPropagation()}
-              className={`relative max-w-2xl w-full p-8 rounded-3xl bg-gradient-to-br ${displayedLetters[selectedLetter].color} backdrop-blur-md border ${displayedLetters[selectedLetter].borderColor} text-left`}
+              className={`relative max-w-2xl w-full p-8 rounded-3xl bg-linear-to-br ${displayedLetters[selectedLetter].color} backdrop-blur-md border ${displayedLetters[selectedLetter].borderColor} text-left`}
             >
               <button
                 onClick={() => setSelectedLetter(null)}

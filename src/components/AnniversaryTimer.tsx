@@ -34,7 +34,7 @@ export default function AnniversaryTimer() {
         className="relative max-w-2xl mx-auto overflow-hidden"
       >
       {/* Glow effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-pink-600/30 via-red-500/20 to-purple-600/30 rounded-2xl blur-xl -z-10" />
+      <div className="absolute inset-0 bg-linear-to-r from-pink-600/30 via-red-500/20 to-purple-600/30 rounded-2xl blur-xl -z-10" />
 
       <div className="relative bg-white/10 backdrop-blur-xl rounded-2xl shadow-2xl p-6 sm:p-8 border border-white/20">
         <div className="text-center mb-6">
@@ -43,7 +43,7 @@ export default function AnniversaryTimer() {
             whileInView={{ scaleX: 1 }} 
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="h-px w-16 bg-gradient-to-r from-transparent via-pink-400/60 to-transparent mx-auto mb-4" 
+            className="h-px w-16 bg-linear-to-r from-transparent via-pink-400/60 to-transparent mx-auto mb-4" 
           />
           <motion.h1 
             initial={{ opacity: 0 }} 
@@ -59,7 +59,7 @@ export default function AnniversaryTimer() {
             whileInView={{ scaleX: 1 }} 
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="h-px w-16 bg-gradient-to-r from-transparent via-pink-400/60 to-transparent mx-auto mt-4" 
+            className="h-px w-16 bg-linear-to-r from-transparent via-pink-400/60 to-transparent mx-auto mt-4" 
           />
         </div>
 
